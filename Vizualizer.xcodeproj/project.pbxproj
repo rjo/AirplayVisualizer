@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0847D576116D8A8600B9B33F /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 0847D575116D8A8600B9B33F /* grid.png */; };
+		08633848116A5BA6009E5D5F /* MediaNavigationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08633847116A5BA6009E5D5F /* MediaNavigationCell.m */; };
+		086797D915789605001A6E72 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086797D815789605001A6E72 /* ArtistViewController.m */; };
+		086797DC1578961E001A6E72 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086797DB1578961E001A6E72 /* AlbumViewController.m */; };
+		086797E51578A2B2001A6E72 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086797E31578A2B2001A6E72 /* AlbumViewController.xib */; };
+		086797E61578A2B2001A6E72 /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086797E41578A2B2001A6E72 /* ArtistViewController.xib */; };
+		087E9CF71574756F0080E3C7 /* SonogramGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 087E9CF61574756F0080E3C7 /* SonogramGLView.mm */; };
+		087E9CF9157488180080E3C7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E9CF8157488180080E3C7 /* Accelerate.framework */; };
+		088EF89D1169533A0038B216 /* RotatingCubeGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 088EF89C1169533A0038B216 /* RotatingCubeGLView.m */; };
+		088EF8CC116953EC0038B216 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088EF8CB116953EC0038B216 /* OpenGLES.framework */; };
+		088EF8D0116953FF0038B216 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088EF8CF116953FF0038B216 /* QuartzCore.framework */; };
+		0894ED1115748B3C0011680F /* SpectrumAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 087E9CF41574707F0080E3C7 /* SpectrumAnalysis.cpp */; };
+		0894ED1215748B3C0011680F /* FFTBufferManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 087E9CF215746EE00080E3C7 /* FFTBufferManager.cpp */; };
+		0894ED1515748B9F0011680F /* rad2fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 0894ED1415748B9F0011680F /* rad2fft.c */; };
+		0894ED1E1574956F0011680F /* SpectrumGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0894ED1D1574956F0011680F /* SpectrumGLView.mm */; };
+		0894ED231575496B0011680F /* DCRejectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0894ED221575496B0011680F /* DCRejectionFilter.cpp */; };
+		0894ED2C1575CAF80011680F /* FNAudioUnitPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0894ED2B1575CAF80011680F /* FNAudioUnitPlaybackManager.m */; };
+		08A2745715701ABC007C480E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A2745615701ABC007C480E /* AVFoundation.framework */; };
+		08A2745915701AF3007C480E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A2745815701AF3007C480E /* CoreMedia.framework */; };
+		08A27467157084C9007C480E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A27466157084C9007C480E /* AudioToolbox.framework */; };
+		08AD18DE1577047400A2500D /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD18DA1577047400A2500D /* TPCircularBuffer.c */; };
+		08AD18DF1577047400A2500D /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 08AD18DC1577047400A2500D /* TPCircularBuffer+AudioBufferList.c */; };
+		08C5C74417973467002C65B7 /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C73C17973467002C65B7 /* backward.png */; };
+		08C5C74517973467002C65B7 /* backward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C73D17973467002C65B7 /* backward@2x.png */; };
+		08C5C74817973467002C65B7 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C74017973467002C65B7 /* pause.png */; };
+		08C5C74917973467002C65B7 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C74117973467002C65B7 /* pause@2x.png */; };
+		08C5C74A17973467002C65B7 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C74217973467002C65B7 /* play.png */; };
+		08C5C74B17973467002C65B7 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C74317973467002C65B7 /* play@2x.png */; };
+		08C5C75317973CF6002C65B7 /* RJOBorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C5C75217973CF6002C65B7 /* RJOBorderedView.m */; };
+		08C5C7561797408A002C65B7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C7541797408A002C65B7 /* forward.png */; };
+		08C5C7571797408A002C65B7 /* forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C7551797408A002C65B7 /* forward@2x.png */; };
+		08C5C7591797437E002C65B7 /* main-navbar-clear-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 08C5C7581797437E002C65B7 /* main-navbar-clear-background.png */; };
+		08D3B7BE1799EAAD00745C6A /* RJOVisualizerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D3B7BD1799EAAD00745C6A /* RJOVisualizerControlView.m */; };
+		08D3B7C0179D925E00745C6A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08D3B7BF179D925E00745C6A /* MainWindow.xib */; };
+		08E2920911699653008C3805 /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2920711699653008C3805 /* PlaylistViewController.m */; };
+		08E2920A11699653008C3805 /* PlaylistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E2920811699653008C3805 /* PlaylistViewController.xib */; };
+		08E2927911699C47008C3805 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E2927711699C47008C3805 /* CollectionViewController.m */; };
+		08E2927A11699C47008C3805 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E2927811699C47008C3805 /* CollectionViewController.xib */; };
+		08E292AA1169A0BB008C3805 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E292A91169A0BB008C3805 /* MediaPlayer.framework */; };
+		08E293001169A915008C3805 /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E292FE1169A915008C3805 /* TrackViewController.m */; };
+		08E293011169A915008C3805 /* TrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E292FF1169A915008C3805 /* TrackViewController.xib */; };
+		1D3623260D0F684500981E51 /* GridAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GridAppDelegate.mm */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* GridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GridViewController.xib */; };
+		28D7ACF80DDB3853001CB0EB /* GridViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GridViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0847D575116D8A8600B9B33F /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		08633846116A5BA6009E5D5F /* MediaNavigationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaNavigationCell.h; path = Classes/MediaNavigationCell.h; sourceTree = "<group>"; };
+		08633847116A5BA6009E5D5F /* MediaNavigationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaNavigationCell.m; path = Classes/MediaNavigationCell.m; sourceTree = "<group>"; };
+		0863391E116A7C16009E5D5F /* GridViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewControllerDelegate.h; sourceTree = "<group>"; };
+		086797D715789605001A6E72 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistViewController.h; path = Classes/ArtistViewController.h; sourceTree = "<group>"; };
+		086797D815789605001A6E72 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistViewController.m; path = Classes/ArtistViewController.m; sourceTree = "<group>"; };
+		086797DB1578961E001A6E72 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumViewController.m; path = Classes/AlbumViewController.m; sourceTree = "<group>"; };
+		086797E31578A2B2001A6E72 /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlbumViewController.xib; path = Classes/AlbumViewController.xib; sourceTree = "<group>"; };
+		086797E41578A2B2001A6E72 /* ArtistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArtistViewController.xib; path = Classes/ArtistViewController.xib; sourceTree = "<group>"; };
+		087E9CF115746EE00080E3C7 /* FFTBufferManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FFTBufferManager.h; path = Classes/FFTBufferManager.h; sourceTree = "<group>"; };
+		087E9CF215746EE00080E3C7 /* FFTBufferManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FFTBufferManager.cpp; path = Classes/FFTBufferManager.cpp; sourceTree = "<group>"; };
+		087E9CF31574707F0080E3C7 /* SpectrumAnalysis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpectrumAnalysis.h; path = Classes/SpectrumAnalysis.h; sourceTree = "<group>"; };
+		087E9CF41574707F0080E3C7 /* SpectrumAnalysis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SpectrumAnalysis.cpp; path = Classes/SpectrumAnalysis.cpp; sourceTree = "<group>"; };
+		087E9CF51574756E0080E3C7 /* SonogramGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SonogramGLView.h; path = Classes/SonogramGLView.h; sourceTree = "<group>"; };
+		087E9CF61574756F0080E3C7 /* SonogramGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SonogramGLView.mm; path = Classes/SonogramGLView.mm; sourceTree = "<group>"; };
+		087E9CF8157488180080E3C7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		088EF89B1169533A0038B216 /* RotatingCubeGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RotatingCubeGLView.h; path = Classes/RotatingCubeGLView.h; sourceTree = "<group>"; };
+		088EF89C1169533A0038B216 /* RotatingCubeGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RotatingCubeGLView.m; path = Classes/RotatingCubeGLView.m; sourceTree = "<group>"; };
+		088EF8CB116953EC0038B216 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		088EF8CF116953FF0038B216 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0894ED1315748B9F0011680F /* rad2fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rad2fft.h; path = Classes/rad2fft.h; sourceTree = "<group>"; };
+		0894ED1415748B9F0011680F /* rad2fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rad2fft.c; path = Classes/rad2fft.c; sourceTree = "<group>"; };
+		0894ED1C1574956F0011680F /* SpectrumGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpectrumGLView.h; path = Classes/SpectrumGLView.h; sourceTree = "<group>"; };
+		0894ED1D1574956F0011680F /* SpectrumGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SpectrumGLView.mm; path = Classes/SpectrumGLView.mm; sourceTree = "<group>"; };
+		0894ED221575496B0011680F /* DCRejectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DCRejectionFilter.cpp; path = Classes/DCRejectionFilter.cpp; sourceTree = "<group>"; };
+		0894ED241575497C0011680F /* DCRejectionFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DCRejectionFilter.h; path = Classes/DCRejectionFilter.h; sourceTree = "<group>"; };
+		0894ED2A1575CAF80011680F /* FNAudioUnitPlaybackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FNAudioUnitPlaybackManager.h; path = Classes/FNAudioUnitPlaybackManager.h; sourceTree = "<group>"; };
+		0894ED2B1575CAF80011680F /* FNAudioUnitPlaybackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FNAudioUnitPlaybackManager.m; path = Classes/FNAudioUnitPlaybackManager.m; sourceTree = "<group>"; };
+		0894ED321575E6190011680F /* FNAudioVisualizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FNAudioVisualizer.h; path = Classes/FNAudioVisualizer.h; sourceTree = "<group>"; };
+		08A2745615701ABC007C480E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08A2745815701AF3007C480E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		08A27466157084C9007C480E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08AD18DA1577047400A2500D /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = Classes/TPCircularBuffer.c; sourceTree = "<group>"; };
+		08AD18DB1577047400A2500D /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = Classes/TPCircularBuffer.h; sourceTree = "<group>"; };
+		08AD18DC1577047400A2500D /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "TPCircularBuffer+AudioBufferList.c"; path = "Classes/TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		08AD18DD1577047400A2500D /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "Classes/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		08C5C73C17973467002C65B7 /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backward.png; path = Images/backward.png; sourceTree = "<group>"; };
+		08C5C73D17973467002C65B7 /* backward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backward@2x.png"; path = "Images/backward@2x.png"; sourceTree = "<group>"; };
+		08C5C74017973467002C65B7 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Images/pause.png; sourceTree = "<group>"; };
+		08C5C74117973467002C65B7 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "Images/pause@2x.png"; sourceTree = "<group>"; };
+		08C5C74217973467002C65B7 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Images/play.png; sourceTree = "<group>"; };
+		08C5C74317973467002C65B7 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "Images/play@2x.png"; sourceTree = "<group>"; };
+		08C5C75117973CF6002C65B7 /* RJOBorderedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RJOBorderedView.h; path = Classes/RJOBorderedView.h; sourceTree = "<group>"; };
+		08C5C75217973CF6002C65B7 /* RJOBorderedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RJOBorderedView.m; path = Classes/RJOBorderedView.m; sourceTree = "<group>"; };
+		08C5C7541797408A002C65B7 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = Images/forward.png; sourceTree = "<group>"; };
+		08C5C7551797408A002C65B7 /* forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forward@2x.png"; path = "Images/forward@2x.png"; sourceTree = "<group>"; };
+		08C5C7581797437E002C65B7 /* main-navbar-clear-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main-navbar-clear-background.png"; path = "Images/main-navbar-clear-background.png"; sourceTree = "<group>"; };
+		08D3B7BC1799EAAD00745C6A /* RJOVisualizerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RJOVisualizerControlView.h; path = Classes/RJOVisualizerControlView.h; sourceTree = "<group>"; };
+		08D3B7BD1799EAAD00745C6A /* RJOVisualizerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RJOVisualizerControlView.m; path = Classes/RJOVisualizerControlView.m; sourceTree = "<group>"; };
+		08D3B7BF179D925E00745C6A /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Classes/MainWindow.xib; sourceTree = "<group>"; };
+		08D3B7C1179D932500745C6A /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumViewController.h; path = Classes/AlbumViewController.h; sourceTree = "<group>"; };
+		08E2920611699653008C3805 /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaylistViewController.h; path = Classes/PlaylistViewController.h; sourceTree = "<group>"; };
+		08E2920711699653008C3805 /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaylistViewController.m; path = Classes/PlaylistViewController.m; sourceTree = "<group>"; };
+		08E2920811699653008C3805 /* PlaylistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlaylistViewController.xib; path = Classes/PlaylistViewController.xib; sourceTree = "<group>"; };
+		08E2927611699C47008C3805 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = Classes/CollectionViewController.h; sourceTree = "<group>"; };
+		08E2927711699C47008C3805 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = Classes/CollectionViewController.m; sourceTree = "<group>"; };
+		08E2927811699C47008C3805 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CollectionViewController.xib; path = Classes/CollectionViewController.xib; sourceTree = "<group>"; };
+		08E292A91169A0BB008C3805 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		08E292FD1169A915008C3805 /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackViewController.h; path = Classes/TrackViewController.h; sourceTree = "<group>"; };
+		08E292FE1169A915008C3805 /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackViewController.m; path = Classes/TrackViewController.m; sourceTree = "<group>"; };
+		08E292FF1169A915008C3805 /* TrackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrackViewController.xib; path = Classes/TrackViewController.xib; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GridAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GridAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GridAppDelegate.mm; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Vizualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vizualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* GridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridViewController.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* GridViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GridViewController.mm; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Vizualizer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vizualizer_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Vizualizer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Vizualizer-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087E9CF9157488180080E3C7 /* Accelerate.framework in Frameworks */,
+				08A27467157084C9007C480E /* AudioToolbox.framework in Frameworks */,
+				08A2745915701AF3007C480E /* CoreMedia.framework in Frameworks */,
+				08A2745715701ABC007C480E /* AVFoundation.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				088EF8CC116953EC0038B216 /* OpenGLES.framework in Frameworks */,
+				088EF8D0116953FF0038B216 /* QuartzCore.framework in Frameworks */,
+				08E292AA1169A0BB008C3805 /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* App Delegate and Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* GridAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GridAppDelegate.mm */,
+				28D7ACF60DDB3853001CB0EB /* GridViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* GridViewController.mm */,
+				2899E5210DE3E06400AC0155 /* GridViewController.xib */,
+				0863391E116A7C16009E5D5F /* GridViewControllerDelegate.h */,
+			);
+			name = "App Delegate and Root View Controller";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		087E9CF015746EC20080E3C7 /* Aurio Touch Components */ = {
+			isa = PBXGroup;
+			children = (
+				0894ED1315748B9F0011680F /* rad2fft.h */,
+				0894ED1415748B9F0011680F /* rad2fft.c */,
+				087E9CF31574707F0080E3C7 /* SpectrumAnalysis.h */,
+				087E9CF41574707F0080E3C7 /* SpectrumAnalysis.cpp */,
+				087E9CF115746EE00080E3C7 /* FFTBufferManager.h */,
+				087E9CF215746EE00080E3C7 /* FFTBufferManager.cpp */,
+				0894ED221575496B0011680F /* DCRejectionFilter.cpp */,
+				0894ED241575497C0011680F /* DCRejectionFilter.h */,
+			);
+			name = "Aurio Touch Components";
+			sourceTree = "<group>";
+		};
+		0894ED361576B2620011680F /* Visualizers */ = {
+			isa = PBXGroup;
+			children = (
+				0894ED321575E6190011680F /* FNAudioVisualizer.h */,
+				088EF89B1169533A0038B216 /* RotatingCubeGLView.h */,
+				088EF89C1169533A0038B216 /* RotatingCubeGLView.m */,
+				087E9CF51574756E0080E3C7 /* SonogramGLView.h */,
+				087E9CF61574756F0080E3C7 /* SonogramGLView.mm */,
+				0894ED1C1574956F0011680F /* SpectrumGLView.h */,
+				0894ED1D1574956F0011680F /* SpectrumGLView.mm */,
+			);
+			name = Visualizers;
+			sourceTree = "<group>";
+		};
+		0894ED371576B2790011680F /* Media Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				08D3B7C1179D932500745C6A /* AlbumViewController.h */,
+				086797DB1578961E001A6E72 /* AlbumViewController.m */,
+				086797E31578A2B2001A6E72 /* AlbumViewController.xib */,
+				086797D715789605001A6E72 /* ArtistViewController.h */,
+				086797D815789605001A6E72 /* ArtistViewController.m */,
+				086797E41578A2B2001A6E72 /* ArtistViewController.xib */,
+				08E2920611699653008C3805 /* PlaylistViewController.h */,
+				08E2920711699653008C3805 /* PlaylistViewController.m */,
+				08E2920811699653008C3805 /* PlaylistViewController.xib */,
+				08E2927611699C47008C3805 /* CollectionViewController.h */,
+				08E2927711699C47008C3805 /* CollectionViewController.m */,
+				08E2927811699C47008C3805 /* CollectionViewController.xib */,
+				08E292FD1169A915008C3805 /* TrackViewController.h */,
+				08E292FE1169A915008C3805 /* TrackViewController.m */,
+				08E292FF1169A915008C3805 /* TrackViewController.xib */,
+				08633846116A5BA6009E5D5F /* MediaNavigationCell.h */,
+				08633847116A5BA6009E5D5F /* MediaNavigationCell.m */,
+				08C5C75117973CF6002C65B7 /* RJOBorderedView.h */,
+				08C5C75217973CF6002C65B7 /* RJOBorderedView.m */,
+			);
+			name = "Media Navigation";
+			sourceTree = "<group>";
+		};
+		0894ED381576B2A40011680F /* Playback Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0894ED2A1575CAF80011680F /* FNAudioUnitPlaybackManager.h */,
+				0894ED2B1575CAF80011680F /* FNAudioUnitPlaybackManager.m */,
+			);
+			name = "Playback Managers";
+			sourceTree = "<group>";
+		};
+		08AD18D91577045600A2500D /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				08AD18DA1577047400A2500D /* TPCircularBuffer.c */,
+				08AD18DB1577047400A2500D /* TPCircularBuffer.h */,
+				08AD18DC1577047400A2500D /* TPCircularBuffer+AudioBufferList.c */,
+				08AD18DD1577047400A2500D /* TPCircularBuffer+AudioBufferList.h */,
+			);
+			name = TPCircularBuffer;
+			sourceTree = "<group>";
+		};
+		08C5C717179726A1002C65B7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				08C5C7581797437E002C65B7 /* main-navbar-clear-background.png */,
+				08C5C7541797408A002C65B7 /* forward.png */,
+				08C5C7551797408A002C65B7 /* forward@2x.png */,
+				08C5C73C17973467002C65B7 /* backward.png */,
+				08C5C73D17973467002C65B7 /* backward@2x.png */,
+				08C5C74017973467002C65B7 /* pause.png */,
+				08C5C74117973467002C65B7 /* pause@2x.png */,
+				08C5C74217973467002C65B7 /* play.png */,
+				08C5C74317973467002C65B7 /* play@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		08D3B7BB1799EA8E00745C6A /* Visualizer Control */ = {
+			isa = PBXGroup;
+			children = (
+				08D3B7BC1799EAAD00745C6A /* RJOVisualizerControlView.h */,
+				08D3B7BD1799EAAD00745C6A /* RJOVisualizerControlView.m */,
+			);
+			name = "Visualizer Control";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Vizualizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				08D3B7BB1799EA8E00745C6A /* Visualizer Control */,
+				08AD18D91577045600A2500D /* TPCircularBuffer */,
+				087E9CF015746EC20080E3C7 /* Aurio Touch Components */,
+				0894ED381576B2A40011680F /* Playback Managers */,
+				0894ED371576B2790011680F /* Media Navigation */,
+				0894ED361576B2620011680F /* Visualizers */,
+				080E96DDFE201D6D7F000001 /* App Delegate and Root View Controller */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				088EF8CB116953EC0038B216 /* OpenGLES.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Vizualizer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08D3B7BF179D925E00745C6A /* MainWindow.xib */,
+				08C5C717179726A1002C65B7 /* Images */,
+				0847D575116D8A8600B9B33F /* grid.png */,
+				8D1107310486CEB800E47090 /* Vizualizer-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08A27466157084C9007C480E /* AudioToolbox.framework */,
+				08A2745815701AF3007C480E /* CoreMedia.framework */,
+				08A2745615701ABC007C480E /* AVFoundation.framework */,
+				087E9CF8157488180080E3C7 /* Accelerate.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				088EF8CF116953FF0038B216 /* QuartzCore.framework */,
+				08E292A91169A0BB008C3805 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Vizualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Vizualizer" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vizualizer;
+			productName = grid;
+			productReference = 1D6058910D05DD3D006BFB54 /* Vizualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RJO;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Robert Joubert Olivier";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Vizualizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Vizualizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2899E5220DE3E06400AC0155 /* GridViewController.xib in Resources */,
+				08E2920A11699653008C3805 /* PlaylistViewController.xib in Resources */,
+				08E2927A11699C47008C3805 /* CollectionViewController.xib in Resources */,
+				08E293011169A915008C3805 /* TrackViewController.xib in Resources */,
+				0847D576116D8A8600B9B33F /* grid.png in Resources */,
+				086797E51578A2B2001A6E72 /* AlbumViewController.xib in Resources */,
+				086797E61578A2B2001A6E72 /* ArtistViewController.xib in Resources */,
+				08C5C74417973467002C65B7 /* backward.png in Resources */,
+				08C5C74517973467002C65B7 /* backward@2x.png in Resources */,
+				08C5C74817973467002C65B7 /* pause.png in Resources */,
+				08C5C74917973467002C65B7 /* pause@2x.png in Resources */,
+				08C5C74A17973467002C65B7 /* play.png in Resources */,
+				08C5C74B17973467002C65B7 /* play@2x.png in Resources */,
+				08C5C7561797408A002C65B7 /* forward.png in Resources */,
+				08C5C7571797408A002C65B7 /* forward@2x.png in Resources */,
+				08C5C7591797437E002C65B7 /* main-navbar-clear-background.png in Resources */,
+				08D3B7C0179D925E00745C6A /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0894ED1115748B3C0011680F /* SpectrumAnalysis.cpp in Sources */,
+				0894ED1215748B3C0011680F /* FFTBufferManager.cpp in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GridAppDelegate.mm in Sources */,
+				28D7ACF80DDB3853001CB0EB /* GridViewController.mm in Sources */,
+				088EF89D1169533A0038B216 /* RotatingCubeGLView.m in Sources */,
+				08E2920911699653008C3805 /* PlaylistViewController.m in Sources */,
+				08E2927911699C47008C3805 /* CollectionViewController.m in Sources */,
+				08E293001169A915008C3805 /* TrackViewController.m in Sources */,
+				08633848116A5BA6009E5D5F /* MediaNavigationCell.m in Sources */,
+				087E9CF71574756F0080E3C7 /* SonogramGLView.mm in Sources */,
+				0894ED1515748B9F0011680F /* rad2fft.c in Sources */,
+				0894ED1E1574956F0011680F /* SpectrumGLView.mm in Sources */,
+				0894ED231575496B0011680F /* DCRejectionFilter.cpp in Sources */,
+				0894ED2C1575CAF80011680F /* FNAudioUnitPlaybackManager.m in Sources */,
+				08AD18DE1577047400A2500D /* TPCircularBuffer.c in Sources */,
+				08AD18DF1577047400A2500D /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				086797D915789605001A6E72 /* ArtistViewController.m in Sources */,
+				086797DC1578961E001A6E72 /* AlbumViewController.m in Sources */,
+				08C5C75317973CF6002C65B7 /* RJOBorderedView.m in Sources */,
+				08D3B7BE1799EAAD00745C6A /* RJOVisualizerControlView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robert Olivier (247TZWA43Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert Olivier (247TZWA43Z)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vizualizer_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Vizualizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Vizualizer;
+				PROVISIONING_PROFILE = "EB8F1E7B-076A-4D9D-8088-E4686F2A1519";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EB8F1E7B-076A-4D9D-8088-E4686F2A1519";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Vizualizer_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Vizualizer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Vizualizer;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Vizualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Vizualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
